@@ -25,6 +25,8 @@ function preload() {
   ding = loadSound('ding.mp3');
 }
 
+var paused = false;
+
 function setup() {
   createCanvas(600, 700);
   colorMode(HSB);
@@ -84,6 +86,8 @@ function newParticle() {
 }
 
 function draw() {
+  if(paused) {
+  } else {
   background(0, 0, 0);
   if (frameCount % 20 == 0) {
     newParticle();
@@ -103,7 +107,8 @@ function draw() {
   for (var i = 0; i < bounds.length; i++) {
     bounds[i].show();
   }
-var paused = false;
+  }
+  
 function keyPressed(){ 
   if (key ==='p'){
   //do pause stuff
