@@ -105,5 +105,3 @@ function draw() {
   }
 }
 function keyPressed(P){
-    
-function KeyPressed(P){
