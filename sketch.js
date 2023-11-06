@@ -104,3 +104,6 @@ function draw() {
     bounds[i].show();
   }
 }
+function keyPressed(P){
+    
+function KeyPressed(P){
