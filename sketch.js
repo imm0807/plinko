@@ -106,7 +106,7 @@ function draw() {
 }
 function keyPressed(){ (if Key ==='P'){
   
-function draw(){
+function draw(){ if(paused){
   
 
 
