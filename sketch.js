@@ -103,17 +103,13 @@ function draw() {
   for (var i = 0; i < bounds.length; i++) {
     bounds[i].show();
   }
-varpaused = false;
-function keyPressed(){ (if Key ==='P'){
+var paused = false;
+function keyPressed(){ 
+  if (key ==='p'){
   //do pause stuff
   paused = true;
-  
-function draw(){ if(paused){
-  //do this stuff
-}else{
-  /do the normal stuff
 }
-               }
+  
 
 
 
