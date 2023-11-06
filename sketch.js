@@ -109,6 +109,7 @@ function keyPressed(){
   //do pause stuff
   paused = true;
 }
+}
   
 
 
