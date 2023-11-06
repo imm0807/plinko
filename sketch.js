@@ -105,9 +105,15 @@ function draw() {
   }
 }
 function keyPressed(){ (if Key ==='P'){
+  //do pause stuff
+  paused = true;
   
 function draw(){ if(paused){
-  
+  //do this stuff
+}else{
+  /do the normal stuff
+}
+               }
 
 
 
