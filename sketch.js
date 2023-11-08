@@ -91,7 +91,7 @@ function draw() {
     textSize(75);
     textAlign(CENTER, CENTER);
   const middleX = width / 2;
-    const middleY = height / 2;
+    const middleY = height / 2; 
     text('PAUSED', middleX, middleY);
     
     
