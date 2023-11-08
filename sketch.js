@@ -108,7 +108,7 @@ function draw() {
     bounds[i].show();
   }
   }
-  
+}
 function keyPressed(){ 
   if (key ==='p'){
   //do pause stuff
