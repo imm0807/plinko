@@ -29,7 +29,7 @@ var paused = false;
 
 function setup() {
   createCanvas(600, 700);
-  colorMode(HSB);
+  colorMode(rgb);
   engine = Engine.create();
   world = engine.world;
   //world.gravity.y = 2;
