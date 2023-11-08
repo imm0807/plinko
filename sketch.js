@@ -122,7 +122,7 @@ function keyPressed(){
   
 function keyPressed() {
   if (key === 'p') {
-    paused = true {
+    paused = true;
     }
 }
 
