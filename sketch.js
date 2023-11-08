@@ -114,7 +114,3 @@ function keyPressed() {
     paused = true;
   }
 }
-  
-
-
-
