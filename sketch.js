@@ -91,6 +91,7 @@ function draw() {
     console.log('PAUSED');
   } else {
     // do the normal stuff
+    textSize(75)
     
   background(0, 0, 0);
   if (frameCount % 20 == 0) {
