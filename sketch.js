@@ -90,16 +90,17 @@ function draw() {
     // Do paused stuff
     textSize(75);
     textAlign(CENTER, CENTER);
-
+  const middleX = width / 2;
+    const middleY = height / 2;
+    text('PAUSED', middleX, middleY);
+    
+    
     console.log('PAUSED');
   } else {
     // do the normal stuff
 
-    const middleX = width / 2;
-    const middleY = width / 2;
+  
 
-    text('PAUSED', middleX, middleY);
-    
   background(0, 0, 0);
   if (frameCount % 20 == 0) {
     newParticle();
