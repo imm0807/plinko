@@ -88,12 +88,12 @@ function newParticle() {
 function draw() {
   if(paused) {
     // Do paused stuff
+    textSize(75);
+    textAlign(CENTER, CENTER);
+
     console.log('PAUSED');
   } else {
     // do the normal stuff
-    textSize(75)
-    textAlign(CENTER, CENTER);
-    text('PAUSED', 50, 50);
 
     const middleX = width / 2;
     const middleY = width / 2;
