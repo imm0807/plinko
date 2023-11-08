@@ -87,7 +87,9 @@ function newParticle() {
 
 function draw() {
   if(paused) {
+    // Do paused stuff
   } else {
+    // do the normal stuff
   background(0, 0, 0);
   if (frameCount % 20 == 0) {
     newParticle();
@@ -116,6 +118,6 @@ function keyPressed(){
 }
 }
   
-
+function keyPressed
 
 
