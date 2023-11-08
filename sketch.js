@@ -94,6 +94,11 @@ function draw() {
     textSize(75)
     textAlign(CENTER, CENTER);
     text('PAUSED', 50, 50);
+
+    const middleX = width / 2;
+    const middleY = width / 2;
+
+    text('PAUSED', middleX, middleY);
     
   background(0, 0, 0);
   if (frameCount % 20 == 0) {
