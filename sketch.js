@@ -132,6 +132,14 @@ function keyPressed (){
     }
   }
 
+  function keyPressed (){
+if(key === 'p'){
+  if(paused){
+  }else{
+    paused=true;
+  }
+}
+    
     function keyPressed (){
     if(key === 'p'){
     if(paused){
