@@ -69,8 +69,8 @@ function setup() {
 
   for (var i = 0; i < cols + 2; i++) {
     var x = i * spacing;
-    var h = 100;
-    var w = 10;
+    var h = 1000;
+    var w = 1000;
     var y = height - h / 2;
     var b = new Boundary(x, y, w, h);
     bounds.push(b);
