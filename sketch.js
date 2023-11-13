@@ -123,19 +123,6 @@ fill(255, 0, 0);
   }
   }
 }
-function keyPressed(){ 
-  if (key ==='p'){
-  //do pause stuff
-  paused = true;
-}
-}
-  
-function keyPressed() {
-  if (key === 'p') {
-    paused = true;
-    }
-}
-
 
     function keyPressed (){
     if(key === 'p'){
