@@ -127,7 +127,6 @@ fill(255, 0, 0);
     function keyPressed (){
     if(key === 'p'){
     if(paused){
-    paused=false;
     }else{
     paused=true;
     }
