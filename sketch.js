@@ -137,3 +137,22 @@ function keyPressed() {
 }
 
 
+function keyPressed (){
+  if(key === 'p'){
+    if(paused){
+      paused=false;
+    }else{
+    paused=true;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
