@@ -29,7 +29,7 @@ var paused = false;
 
 function setup() {
   createCanvas(600, 700);
-  colorMode(RGB);
+  colorMode(HSB);
   engine = Engine.create();
   world = engine.world;
   //world.gravity.y = 2;
@@ -74,10 +74,7 @@ function setup() {
     var y = height - h / 2;
     var b = new Boundary(x, y, w, h);
     bounds.push(b);
-
   }
-
-
 }
 
 function newParticle() {
@@ -86,69 +83,51 @@ function newParticle() {
 }
 
 function draw() {
-  if(paused) {
-    // Do paused stuff
+  if (paused) {
+    // Draw paused stuff
+    push();
+    colorMode(RGB);
     textSize(75);
     textAlign(CENTER, CENTER);
-  const middleX = width / 2;
+    const middleX = width / 2;
     const middleY = height / 2; 
-fill(255, 0, 0);
+    fill(255, 0, 0);
     text('PAUSED', middleX, middleY);
-    
-    
     console.log('PAUSED');
+    pop();
   } else {
-    // do the normal stuff
-
-  
-
-  background(0, 0, 0);
-  if (frameCount % 20 == 0) {
-    newParticle();
-  }
-  Engine.update(engine, 1000 / 30);
-  for (var i = 0; i < particles.length; i++) {
-    particles[i].show();
-    if (particles[i].isOffScreen()) {
-      World.remove(world, particles[i].body);
-      particles.splice(i, 1);
-      i--;
+    // do the normal stuff 
+    background(0, 0, 0);
+    if (frameCount % 20 == 0) {
+      newParticle();
     }
-  }
-  for (var i = 0; i < plinkos.length; i++) {
-    plinkos[i].show();
-  }
-  for (var i = 0; i < bounds.length; i++) {
-    bounds[i].show();
-  }
+    Engine.update(engine, 1000 / 30);
+    for (var i = 0; i < particles.length; i++) {
+      particles[i].show();
+      if (particles[i].isOffScreen()) {
+        World.remove(world, particles[i].body);
+        particles.splice(i, 1);
+        i--;
+      }
+    }
+    for (var i = 0; i < plinkos.length; i++) {
+      plinkos[i].show();
+    }
+    for (var i = 0; i < bounds.length; i++) {
+      bounds[i].show();
+    }
   }
 }
 
-function keyPressed (){
-  if(key === 'p'){
-    if(paused){
-    }else{
+function keyPressed() {
+  if (key === 'p') {
+    if (paused) {
+      paused = false;
+    } else {
       paused=true;
     }
   }
-
-  function keyPressed (){
-if(key === 'p'){
-  if(paused){
-  }else{
-    paused=true;
-  }
 }
-    
-    function keyPressed (){
-    if(key === 'p'){
-    if(paused){
-    }else{
-    paused=true;
-    }
-  }
-
-
 
 
 
