@@ -28,7 +28,7 @@ function preload() {
 var paused = false;
 
 function setup() {
-  createCanvas(600, 700);
+  createCanvas(6000, 7000);
   colorMode(HSB);
   engine = Engine.create();
   world = engine.world;
