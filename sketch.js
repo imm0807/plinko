@@ -130,7 +130,11 @@ function keyPressed() {
 }
 
 
-
+function mouseClicked() {
+  ellips(mouseX, mouseY, 5, 5);
+  // prevent default
+  return false;
+}
 
 
 
