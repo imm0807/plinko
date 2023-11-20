@@ -18,8 +18,8 @@ var world;
 var particles = [];
 var plinkos = [];
 var bounds = [];
-var cols = 10;
-var rows = 11;
+var cols = 12;
+var rows = 9;
 
 function preload() {
   ding = loadSound('ding.mp3');
