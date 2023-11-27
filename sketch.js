@@ -18,7 +18,7 @@ var world;
 var particles = [];
 var plinkos = [];
 var bounds = [];
-var cols = 10;
+var cols = 9;
 var rows = 11;
 
 function preload() {
