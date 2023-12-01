@@ -50,7 +50,6 @@ function setup() {
 
   Events.on(engine, 'collisionStart', collision);
 
-  newParticle();
   var spacing = width / cols;
   for (var j = 0; j < rows; j++) {
     for (var i = 0; i < cols + 1; i++) {
@@ -77,11 +76,6 @@ function setup() {
   }
 }
 
-function newParticle() {
-  var p = new Particle(300, 0, 10);
-  particles.push(p);
-}
-
 function draw() {
   if (paused) {
     // Draw paused stuff
@@ -98,7 +92,7 @@ function draw() {
   } else {
     // do the normal stuff 
     background(0, 0, 0);
-    
+
     Engine.update(engine, 1000 / 30);
     for (var i = 0; i < particles.length; i++) {
       particles[i].show();
@@ -122,14 +116,15 @@ function keyPressed() {
     if (paused) {
       paused = false;
     } else {
-      paused=true;
+      paused = true;
     }
   }
 }
 
-
 function mouseClicked() {
-  ellips(mouseX, mouseY, 5, 5);
+  var p = new Particle(mouseX, mouseY, 10);
+  particles.push(p);
+  
   // prevent default
   return false;
 }
