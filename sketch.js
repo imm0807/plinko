@@ -98,9 +98,7 @@ function draw() {
   } else {
     // do the normal stuff 
     background(0, 0, 0);
-    if (frameCount % 20 == 0) {
-      newParticle();
-    }
+    
     Engine.update(engine, 1000 / 30);
     for (var i = 0; i < particles.length; i++) {
       particles[i].show();
