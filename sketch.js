@@ -18,8 +18,8 @@ var world;
 var particles = [];
 var plinkos = [];
 var bounds = [];
-var cols = 11;
-var rows = 10;
+var cols = 20;
+var rows = 12;
 
 function preload() {
   ding = loadSound('ding.mp3');
@@ -28,7 +28,7 @@ function preload() {
 var paused = false;
 
 function setup() {
-  createCanvas(850, 550);
+  createCanvas(1000, 070);
   colorMode(HSB);
   engine = Engine.create();
   world = engine.world;
