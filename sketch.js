@@ -14,7 +14,7 @@ var Engine = Matter.Engine,
   Bodies = Matter.Bodies;
 
 var engine;
-var world;
+var world; 
 var particles = [];
 var plinkos = [];
 var bounds = [];
